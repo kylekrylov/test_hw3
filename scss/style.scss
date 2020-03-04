@@ -2,6 +2,7 @@
 header {
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .burger {
@@ -138,11 +139,12 @@ nav {
 
 // !! content  --->
 .content {
-    height: 120vh;
+    height: 100vh;
     background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
     &_box {
         text-align: center;
         padding-top: 50px;
@@ -160,7 +162,7 @@ nav {
     }
 }
 
-.content_box.active {
+.content.active {
     position: relative;
     right: -300px;
 }
